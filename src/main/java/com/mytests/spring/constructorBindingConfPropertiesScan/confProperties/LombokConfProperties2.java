@@ -1,8 +1,6 @@
 package com.mytests.spring.constructorBindingConfPropertiesScan.confProperties;
 
-import lombok.Data;
 import lombok.Getter;
-import lombok.NonNull;
 import lombok.Setter;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 
