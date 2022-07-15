@@ -11,6 +11,11 @@ my:
   props4:
     prop1: p4p1
     prop2: p4p2
+    utils-record:
+      nested-prop1: foo
+    records-list:
+      - nested-prop1: bar
+      - nested-prop1: buzz
   props5:
     prop1: p5p1
     prop2: p5p2
