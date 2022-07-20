@@ -34,3 +34,7 @@ my:
   props00:
     prop1: p00.p1
     prop2: p00.p2
+  props10:
+    pr2:
+      - pr4:
+          - pr6: foo
