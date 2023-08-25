@@ -1,7 +1,8 @@
 package com.mytests.spring.constructorBindingConfPropertiesScan.invalidDir;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.ConstructorBinding;
+import org.springframework.boot.context.properties.bind.ConstructorBinding;
+//mport org.springframework.boot.context.properties.ConstructorBinding;
 
 /**
  * *

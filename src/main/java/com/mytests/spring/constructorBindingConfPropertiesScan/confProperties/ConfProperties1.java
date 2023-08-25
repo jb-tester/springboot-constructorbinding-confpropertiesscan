@@ -1,7 +1,7 @@
 package com.mytests.spring.constructorBindingConfPropertiesScan.confProperties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.ConstructorBinding;
+import org.springframework.boot.context.properties.bind.ConstructorBinding;
 
 /**
  * *
@@ -23,7 +23,8 @@ public class ConfProperties1 {
         this.flag = flag;
     }
 
-    @ConstructorBinding public ConfProperties1(String prop1, String prop2) {
+    @ConstructorBinding
+    public ConfProperties1(String prop1, String prop2) {
         this.prop1 = prop1;
         this.prop2 = prop2;
     }

@@ -1,7 +1,6 @@
 package com.mytests.spring.constructorBindingConfPropertiesScan.confProperties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.boot.context.properties.ConstructorBinding;
 
 /**
  * *
@@ -13,8 +12,9 @@ import org.springframework.boot.context.properties.ConstructorBinding;
 @ConfigurationProperties("my.props00")
 public class ConfPropertiesWithSetters {
 
-    String prop1;
-    String prop2;
+    private static final String DEF_PROP2 = "default_prop2_value";
+    String prop1 = "default_prop1_value";
+    String prop2 = DEF_PROP2;
 
     public void setProp1(String prop1) {
         this.prop1 = prop1;
