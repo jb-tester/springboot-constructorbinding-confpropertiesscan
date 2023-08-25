@@ -38,3 +38,10 @@ my:
     pr2:
       - pr4:
           - pr6: foo
+
+  props12:
+    property2:
+      nested-prop: sss
+      inherited-prop: ttt
+
+
