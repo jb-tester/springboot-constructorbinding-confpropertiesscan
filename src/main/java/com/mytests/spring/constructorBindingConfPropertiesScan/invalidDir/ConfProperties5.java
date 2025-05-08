@@ -2,7 +2,7 @@ package com.mytests.spring.constructorBindingConfPropertiesScan.invalidDir;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.bind.ConstructorBinding;
-//mport org.springframework.boot.context.properties.ConstructorBinding;
+//import org.springframework.boot.context.properties.ConstructorBinding;
 
 /**
  * *
@@ -29,7 +29,14 @@ public class ConfProperties5 {
         this.prop2 = prop2;
     }
 
+    // setters are required now - @ConstructorBinding doesn't work?
+    public void setProp1(String prop1) {
+        this.prop1 = prop1;
+    }
 
+    public void setProp2(String prop2) {
+        this.prop2 = prop2;
+    }
 
     public String getProp1() {
         return prop1;
